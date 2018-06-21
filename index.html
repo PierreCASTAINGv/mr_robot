@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <title>Mister Robot</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet" />
+  <script src="./js/scripts.js"></script>
+
+</head>
+
+<body>
+    <script>
+        function startClr() {
+        var clic = 3;
+        clic ++;
+        newclic = clic ++;
+        if (newclic % 2 == 0) {
+          document.getElementById("a-tete").style.border = "7px solid blue";
+        } else {
+        document.getElementById("a-tete").removeAttribute.style;
+        }
+        }
+        function startBorderHead() {
+          document.getElementById("a-tete").removeAttribute("style");
+        }
+        function stopTurnHead() {
+          document.getElementById("a-tete").style.animationPlayState = "paused";
+          }
+        function startMovBras() {
+          document.getElementById("a-bras").style.animationPlayState = "running";
+          document.getElementById("bb-bras").style.animationPlayState = "running";
+        }
+    </script>
+    <!--<div id="bulle">
+        <p>Avanti ?!?!?!</p>
+      </div>-->
+  <div id="tete">
+    <img src="./images/nuage.png" alt="nuages">
+    <div id="a-tete">
+      <div id="g-oeil">
+     </div>
+      <div id="d-oeil">
+      </div>
+      <div id="bouche">
+        <div id="a-coin">
+        </div>
+        <div id="b-coin">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="cou">
+    <div id="a-cou">
+    </div>
+  </div>
+  
+  <div id="corps">
+    <div id="center-corps">
+      <div id="a-bras">
+      </div>
+      <div id="tronc">
+        <ul>
+          <li><a href="#" id="setBorder" onclick="startClr()"></a></li>
+          <li><a href="#" id="removeBorder" onclick="startBorderHead()"></a></li>
+          <li><a href="#" id="stopHead" onclick="stopTurnHead()"></a></li>
+          <li><a href="#" id="startBras" onclick="startMovBras()"></a></li>
+        </ul>
+      </div>
+      <div id="b-bras">
+        <div id="bh-bras">
+        </div>
+        <div id="bb-bras">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="jambes">
+    <div id="center-jambes">
+    <div id="a-jambe">
+      <div id="ah-jambe">
+      </div>
+      <div id="ab-jambe">
+      </div>
+    </div>
+    <div onclick="rondeau()" id="b-jambe">
+        <div id="bh-jambe">
+        </div>
+        <div id="bb-jambe">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div id="message">
+      <p>
+        Avanti !! Segnore
+      </p>
+  </div>-->
+</body>
+
+</html>
